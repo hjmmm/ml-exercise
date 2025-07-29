@@ -1,0 +1,7 @@
+services:
+  jupyter:
+    build:
+      context: .
+    ports:
+      - 8889:8888
+    command: start-notebook.py --NotebookApp.token='mlexercise'
